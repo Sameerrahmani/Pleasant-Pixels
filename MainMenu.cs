@@ -10,7 +10,6 @@ public class MainMenu : Control
 	{
 		StartButton = GetNode<Button>("CanvasLayer/StartButton");
 		DayNight = GetNode<AnimationPlayer>("CanvasModulate/AnimationPlayer");
-		
 		DayNight.Play("DayNightCycle");
 		
 	}
