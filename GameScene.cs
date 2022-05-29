@@ -26,7 +26,14 @@ public class GameScene : Node2D
 		Space = GetNode<Node2D>("Space");
 		
 	}
-		
+	
+	public override void _Process(float _delta)
+	{
+		if(Input.IsActionPressed("ui_cancel"))
+		{
+			GetTree().ChangeScene("res://Scenes/MainMenu.tscn");
+		}
+	}
 
 	private void _on_MusicButton_toggled(bool button_pressed)
 	{
